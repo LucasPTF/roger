@@ -314,10 +314,19 @@ summary:focus-visible,
   background: var(--copper-light);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50%;
-  font-size: 0.72rem;
-  font-weight: 900;
-  line-height: 1;
   box-shadow: 0 0 0 3px rgba(240, 189, 128, 0.08);
+}
+
+.check-icon svg {
+  width: 12px;
+  height: 10px;
+  display: block;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .hero-visual {

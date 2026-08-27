@@ -19,7 +19,13 @@ function ArrowIcon() {
 }
 
 function CheckIcon() {
-  return <span className="check-icon" aria-hidden="true">✓</span>;
+  return (
+    <span className="check-icon" aria-hidden="true">
+      <svg viewBox="0 0 12 10" focusable="false">
+        <path d="M1.5 5 4.5 8 10.5 1.5" />
+      </svg>
+    </span>
+  );
 }
 
 export function SalesPage({ angle }: SalesPageProps) {
