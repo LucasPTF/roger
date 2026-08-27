@@ -50,9 +50,11 @@ test("changes only the hero angle between sales routes", async () => {
   ];
 
   for (const page of html) {
+    assert.doesNotMatch(page, /Ângulo [123] \|/);
     for (const marker of sharedMarkers) {
       assert.match(page, marker);
     }
+    assert.match(page, /3 encontros/);
   }
 });
 

@@ -2,7 +2,6 @@ export type HeroAngle = "a1" | "a2" | "a3";
 
 export const heroAngles = {
   a1: {
-    label: "Ângulo 1 | Seu dinheiro pede uma nova saída",
     eyebrow: "Você guarda. Mas quase não sente crescer.",
     title: "Seu dinheiro está comportado demais.",
     support:
@@ -10,7 +9,6 @@ export const heroAngles = {
     cta: "Quero montar minha estrutura cripto",
   },
   a2: {
-    label: "Ângulo 2 | A verdade sobre o risco",
     eyebrow: "Medo de golpe? Começa por aqui.",
     title: "Cripto não é o problema. Entrar sem estrutura é.",
     support:
@@ -18,7 +16,6 @@ export const heroAngles = {
     cta: "Quero entender o caminho certo",
   },
   a3: {
-    label: "Ângulo 3 | Comece sem virar trader",
     eyebrow: "Comece manual. Entenda o jogo.",
     title: "Você não precisa morar na frente de um gráfico para começar.",
     support:
@@ -27,7 +24,7 @@ export const heroAngles = {
   },
 } satisfies Record<
   HeroAngle,
-  { label: string; eyebrow: string; title: string; support: string; cta: string }
+  { eyebrow: string; title: string; support: string; cta: string }
 >;
 
 export const workshopDays = [

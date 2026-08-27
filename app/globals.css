@@ -305,16 +305,19 @@ summary:focus-visible,
 }
 
 .check-icon {
-  width: 19px;
-  height: 19px;
-  flex: 0 0 19px;
+  width: 21px;
+  height: 21px;
+  flex: 0 0 21px;
   display: inline-grid;
   place-items: center;
-  color: var(--copper-light);
-  border: 1px solid currentColor;
+  color: var(--navy);
+  background: var(--copper-light);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50%;
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 900;
+  line-height: 1;
+  box-shadow: 0 0 0 3px rgba(240, 189, 128, 0.08);
 }
 
 .hero-visual {
@@ -823,12 +826,28 @@ summary:focus-visible,
 }
 
 .no-bonus-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-bonus-number {
   color: transparent;
   font-family: var(--font-display), Arial, sans-serif;
   font-size: clamp(8rem, 18vw, 15rem);
   font-weight: 800;
   line-height: 0.8;
   -webkit-text-stroke: 1px rgba(13, 61, 61, 0.34);
+}
+
+.no-bonus-label {
+  margin-top: 22px;
+  color: var(--petrol);
+  font-size: clamp(0.72rem, 0.9vw, 0.82rem);
+  font-weight: 850;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 .no-bonus-grid h2 {
@@ -882,6 +901,10 @@ summary:focus-visible,
 .lot-featured {
   background: rgba(22, 91, 86, 0.27);
   border-color: rgba(240, 189, 128, 0.48);
+}
+
+.lot-card:not(.lot-featured) {
+  opacity: 0.58;
 }
 
 .lot-badge {
@@ -1474,9 +1497,12 @@ footer {
     margin-bottom: 45px;
   }
 
-  .no-bonus-mark {
+  .no-bonus-number {
     font-size: 9rem;
-    margin-bottom: -12px;
+  }
+
+  .no-bonus-mark {
+    margin-bottom: 12px;
   }
 
   .lot-grid {

@@ -42,7 +42,6 @@ export function SalesPage({ angle }: SalesPageProps) {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-grid shell">
           <div className="hero-copy">
-            <p className="angle-label">{hero.label}</p>
             <p className="hero-eyebrow">{hero.eyebrow}</p>
             <h1 id="hero-title">{hero.title}</h1>
             <p className="hero-support">{hero.support}</p>
@@ -245,7 +244,10 @@ export function SalesPage({ angle }: SalesPageProps) {
 
       <section className="no-bonus section-light">
         <div className="shell no-bonus-grid">
-          <div className="no-bonus-mark">3x</div>
+          <div className="no-bonus-mark" aria-label="3 encontros">
+            <span className="no-bonus-number">3</span>
+            <span className="no-bonus-label">encontros</span>
+          </div>
           <div>
             <p className="section-kicker">Sem bônus para inflar preço</p>
             <h2>O valor está no que realmente importa.</h2>
